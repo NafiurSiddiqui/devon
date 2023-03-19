@@ -5,6 +5,7 @@ export default function Navbar() {
 	return (
 		<nav>
 			<span className="navbar-logo">Devon</span>
+
 			<Button size={'m'} path={'/login'}>
 				Log in
 			</Button>
