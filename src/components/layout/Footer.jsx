@@ -3,9 +3,11 @@ import MenuContainer from '../MenuContainer';
 
 export default function Footer() {
 	return (
-		<footer className="borderTest absolute bottom-0 flex w-full justify-between p-2">
-			<div>copyright©️ Devon</div>
-			<nav className="borderTest bg-transparent">
+		<footer className="borderTest absolute bottom-0 flex h-28 w-full justify-between p-2">
+			<p>
+				©️copyright <span className="font-semibold">Devon</span>
+			</p>
+			<nav className=" bg-transparent">
 				<MenuContainer itemType={'footer'} />
 			</nav>
 		</footer>

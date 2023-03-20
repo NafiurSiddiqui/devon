@@ -14,7 +14,7 @@ const footerItems = [
 export default function MenuContainer({ itemType }) {
 	return (
 		<ul
-			className={`flex  justify-between  border border-gray-100 bg-gray-50   md:mt-0 md:flex-row md:border-0  md:text-sm md:font-medium ${
+			className={`flex justify-between  bg-gray-50   md:mt-0 md:flex-row md:border-0  md:text-sm md:font-medium ${
 				itemType === 'footer' ? 'flex-row' : 'flex-col'
 			}`}
 		>
