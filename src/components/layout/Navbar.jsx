@@ -4,6 +4,7 @@ import Button from '../Button';
 import MenuContainer from '../MenuContainer';
 
 export default function Navbar() {
+	const borderTest = 'border border-slate-800';
 	return (
 		// <nav className="border-slate-800 ">
 		// 	<span className="navbar-logo">Devon</span>
@@ -16,14 +17,16 @@ export default function Navbar() {
 
 		// <nav className="rounded border-gray-200 bg-white px-2 py-2.5 dark:bg-gray-900 sm:px-4">
 		<nav className=" border border-slate-800 px-2 py-3">
-			<div className="container mx-auto flex flex-wrap items-center justify-between">
-				<Link href="/" className="flex items-center">
+			<div
+				className={`container-full flex flex-wrap items-center justify-between ${borderTest}`}
+			>
+				<Link href="/" className={`flex items-center ${borderTest} `}>
 					<span className="self-center whitespace-nowrap text-xl font-semibold text-slate-900">
 						Devon
 					</span>
 				</Link>
 
-				<div className="flex  items-center justify-between border border-slate-800 md:w-80">
+				<div className="flex  items-center justify-between  md:w-80">
 					<div className="hidden w-full md:block md:w-auto" id="navbar-default">
 						<MenuContainer />
 					</div>

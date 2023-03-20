@@ -13,7 +13,7 @@ export default function MenuContainer() {
 				<li key={title} className="mx-2first:ml-0">
 					<Link
 						href={path}
-						className="md:p-00 inline-block rounded border border-slate-800 py-2  
+						className="md:p-00 inline-block rounded py-2  
 						 pl-3 pr-4 text-slate-800 before:absolute before:top-[3.2rem] before:h-2
 						 before:rounded-sm 
 						 before:bg-secondary
