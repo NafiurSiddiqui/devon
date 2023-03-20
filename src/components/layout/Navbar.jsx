@@ -6,21 +6,11 @@ import MenuContainer from '../MenuContainer';
 export default function Navbar() {
 	const borderTest = 'border border-slate-800';
 	return (
-		// <nav className="border-slate-800 ">
-		// 	<span className="navbar-logo">Devon</span>
-
-		// 	<MenuContainer />
-		// 	<Button size={'m'} path={'/login'}>
-		// 		Log in
-		// 	</Button>
-		// </nav>
-
-		// <nav className="rounded border-gray-200 bg-white px-2 py-2.5 dark:bg-gray-900 sm:px-4">
-		<nav className=" border border-slate-800 px-2 py-3">
+		<nav className=" border border-slate-800 px-2 py-2">
 			<div
-				className={`container-full flex flex-wrap items-center justify-between ${borderTest}`}
+				className={`container-full flex flex-wrap items-center justify-between`}
 			>
-				<Link href="/" className={`flex items-center ${borderTest} `}>
+				<Link href="/" className={`flex items-center `}>
 					<span className="self-center whitespace-nowrap text-xl font-semibold text-slate-900">
 						Devon
 					</span>
@@ -28,7 +18,7 @@ export default function Navbar() {
 
 				<div className="flex  items-center justify-between  md:w-80">
 					<div className="hidden w-full md:block md:w-auto" id="navbar-default">
-						<MenuContainer />
+						<MenuContainer itemType={'header'} />
 					</div>
 					<Button size={'m'} path={'/login'}>
 						Login
