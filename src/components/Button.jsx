@@ -16,7 +16,7 @@ export default function Button({ children, size, path }) {
 		<button
 			type="button"
 			className={
-				'h-10 w-36 rounded  border-2 border-slate-500 font-semibold text-slate-600 hover:border-0 hover:border-none hover:border-transparent hover:bg-slate-700 hover:text-white '
+				'h-10 w-36 rounded border-2 border-slate-500 font-semibold text-slate-600 hover:border-0 hover:border-none hover:border-transparent hover:bg-slate-700 hover:text-white '
 			}
 		>
 			<Link href={path}>{children}</Link>

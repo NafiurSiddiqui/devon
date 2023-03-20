@@ -28,7 +28,7 @@ export default function Navbar() {
 						<MenuContainer />
 					</div>
 					<Button size={'m'} path={'/login'}>
-						Log in
+						Login
 					</Button>
 					<button
 						data-collapse-toggle="navbar-default"
