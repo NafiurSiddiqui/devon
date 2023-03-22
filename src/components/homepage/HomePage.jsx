@@ -6,8 +6,16 @@ export default function HomePage() {
 	return (
 		<section>
 			<div>
-				<Image src={HeroImage} alt="A macbook" />
+				<Image
+					src={HeroImage}
+					alt="A macbook"
+					placeholder="blur"
+					// fill
+					priority
+				/>
 			</div>
+
+			<article></article>
 		</section>
 	);
 }
