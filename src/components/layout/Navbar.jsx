@@ -4,7 +4,6 @@ import Button from '../Button';
 import MenuContainer from '../MenuContainer';
 
 export default function Navbar() {
-	const borderTest = 'border border-slate-800';
 	return (
 		<nav className=" border border-slate-800 px-2 py-2">
 			<div
