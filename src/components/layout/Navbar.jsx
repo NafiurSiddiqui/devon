@@ -5,12 +5,12 @@ import MenuContainer from '../MenuContainer';
 
 export default function Navbar() {
 	return (
-		<nav className=" border border-slate-800 px-2 py-2">
+		<nav className="fixed bottom-0 h-20 w-full border border-slate-800 px-2 py-2 sm:top-0 sm:z-10">
 			<div
 				className={`container-full flex flex-wrap items-center justify-between`}
 			>
 				<Link href="/" className={`flex items-center `}>
-					<span className="self-center whitespace-nowrap text-xl font-semibold text-slate-900">
+					<span className="self-center whitespace-nowrap text-xl font-semibold italic text-slate-900">
 						Devon
 					</span>
 				</Link>

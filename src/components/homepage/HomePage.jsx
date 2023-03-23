@@ -18,6 +18,7 @@ export default function HomePage() {
 					<h1 className={`text-6xl text-white `}>Dev up</h1>
 					<p
 						className="text-bold
+					borderTest w-5/6
 					text-white
 					
 					"
@@ -26,7 +27,7 @@ export default function HomePage() {
 						industry that always pays.
 					</p>
 
-					<div className="borderTest flex w-full justify-between">
+					<div className="borderTest flex w-5/6 justify-between">
 						<Button path={'/signup'} type={'fill'}>
 							Sign up
 						</Button>
