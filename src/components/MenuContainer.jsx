@@ -36,13 +36,14 @@ export default function MenuContainer({ itemType }) {
 						</li>
 				  ))
 				: footerItems.map(([title, path]) => (
-						<li key={title} className="">
+						<li key={title}>
 							<Link
 								href={path}
 								className="md:p-00 hover:navHover  
 								navText 
 								inline-block
-						 py-2 pl-3 pr-4 
+								py-2
+						 pl-3 pr-4 text-2xl
 						 text-slate-800
 						 md:bg-transparent"
 								aria-current="page"

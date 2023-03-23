@@ -3,7 +3,7 @@ import MenuContainer from '../MenuContainer';
 
 export default function Footer() {
 	return (
-		<footer className="z-10 flex h-32 w-full justify-between p-2">
+		<footer className="borderTest absolute bottom-0 z-10 flex h-28 w-full justify-between px-2 py-6">
 			<p>
 				©️copyright <span className="font-semibold">Devon</span>
 			</p>

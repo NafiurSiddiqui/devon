@@ -6,29 +6,31 @@ import Button from '../Button';
 export default function HomePage() {
 	return (
 		<section className="relative z-10 ">
-			<div className="relative ">
+			<div className="relative flex justify-center leading-6  ">
 				<Image
-					className="supportForSafari  h-96 object-fill"
+					className="supportForSafari  h-96 brightness-50 contrast-75  "
 					src={HeroImage}
 					alt="A macbook"
 					placeholder="blur"
 					width={'100%'}
 					priority
 				/>
-				<article className={`borderTest absolute top-1/4 ml-4 w-full  `}>
-					<h1 className={`text-4xl text-white sm:text-6xl `}>Dev up</h1>
+				<article className={`borderTest absolute top-1/4 px-4  sm:w-4/5  `}>
+					<h1 className={`pb-4 text-4xl text-slate-100 sm:text-6xl `}>
+						Dev up
+					</h1>
 					<p
 						className="text-bold
-					borderTest w-5/6
+					borderTest 
+					mb-7
 					text-white
-					
 					"
 					>
 						Kick start your career with Devon and be a part of massive tech
 						industry that always pays.
 					</p>
 
-					<div className="borderTest flex w-5/6 justify-between">
+					<div className="borderTest flex justify-between">
 						<Button path={'/signup'} type={'fill'}>
 							Sign up
 						</Button>
