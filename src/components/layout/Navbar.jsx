@@ -5,9 +5,9 @@ import MenuContainer from '../MenuContainer';
 
 export default function Navbar() {
 	return (
-		<nav className="fixed bottom-0 h-20 w-full border border-slate-800 px-2 py-2 sm:top-0 sm:z-10">
+		<nav className=" z-20 flex h-20 w-full items-center justify-between border border-slate-800 bg-slate-50 px-2 py-2 align-middle sm:top-0">
 			<div
-				className={`container-full flex flex-wrap items-center justify-between`}
+				className={`container-full borderTest flex w-full flex-wrap items-center justify-between`}
 			>
 				<Link href="/" className={`flex items-center `}>
 					<span className="self-center whitespace-nowrap text-xl font-semibold italic text-slate-900">
@@ -15,7 +15,7 @@ export default function Navbar() {
 					</span>
 				</Link>
 
-				<div className="flex  items-center justify-between  md:w-80">
+				<div className="flex w-52  items-center justify-between md:w-80">
 					<div className="hidden w-full md:block md:w-auto" id="navbar-default">
 						<MenuContainer itemType={'header'} />
 					</div>

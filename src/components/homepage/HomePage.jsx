@@ -5,17 +5,18 @@ import Button from '../Button';
 
 export default function HomePage() {
 	return (
-		<section>
-			<div className="relative">
+		<section className="relative z-10 ">
+			<div className="relative ">
 				<Image
-					className="supportForSafari"
+					className="supportForSafari  h-96 object-fill"
 					src={HeroImage}
 					alt="A macbook"
 					placeholder="blur"
+					width={'100%'}
 					priority
 				/>
-				<article className={`borderTest absolute top-2 w-96 `}>
-					<h1 className={`text-6xl text-white `}>Dev up</h1>
+				<article className={`borderTest absolute top-1/4 ml-4 w-full  `}>
+					<h1 className={`text-4xl text-white sm:text-6xl `}>Dev up</h1>
 					<p
 						className="text-bold
 					borderTest w-5/6
