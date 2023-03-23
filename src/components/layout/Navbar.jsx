@@ -19,7 +19,7 @@ export default function Navbar() {
 					<div className="hidden w-full md:block md:w-auto" id="navbar-default">
 						<MenuContainer itemType={'header'} />
 					</div>
-					<Button size={'m'} path={'/login'}>
+					<Button type={'no-fill'} path={'/login'}>
 						Login
 					</Button>
 					<button
