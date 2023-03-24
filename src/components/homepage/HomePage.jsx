@@ -15,8 +15,10 @@ export default function HomePage() {
 					width={'100%'}
 					priority={true}
 				/>
-				<article className={` absolute top-1/4 px-4  sm:w-4/5  `}>
-					<h1 className={`pb-4 text-4xl text-slate-100 sm:text-6xl `}>
+				<article
+					className={` absolute top-1/4 w-[90%] px-4 android-md:w-4/5 tablet:w-5/6 tablet-md:w-96  `}
+				>
+					<h1 className={`sm:text-6xl pb-4 text-4xl text-slate-100 `}>
 						Dev up
 					</h1>
 					<p
