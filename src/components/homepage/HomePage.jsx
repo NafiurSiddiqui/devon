@@ -15,13 +15,13 @@ export default function HomePage() {
 					width={'100%'}
 					priority
 				/>
-				<article className={`borderTest absolute top-1/4 px-4  sm:w-4/5  `}>
+				<article className={` absolute top-1/4 px-4  sm:w-4/5  `}>
 					<h1 className={`pb-4 text-4xl text-slate-100 sm:text-6xl `}>
 						Dev up
 					</h1>
 					<p
 						className="text-bold
-					borderTest 
+					 
 					mb-7
 					text-white
 					"
@@ -30,7 +30,7 @@ export default function HomePage() {
 						industry that always pays.
 					</p>
 
-					<div className="borderTest flex justify-between">
+					<div className=" flex justify-between">
 						<Button path={'/signup'} type={'fill'}>
 							Sign up
 						</Button>

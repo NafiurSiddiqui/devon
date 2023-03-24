@@ -7,7 +7,7 @@ export default function Navbar() {
 	return (
 		<nav className=" z-20 flex h-20 w-full items-center justify-between border border-slate-800 bg-slate-50 px-2 py-2 align-middle sm:top-0">
 			<div
-				className={`container-full borderTest flex w-full flex-wrap items-center justify-between`}
+				className={`container-full flex w-full flex-wrap items-center justify-between`}
 			>
 				<Link href="/" className={`flex items-center `}>
 					<span className="self-center whitespace-nowrap text-xl font-semibold italic text-slate-900">
