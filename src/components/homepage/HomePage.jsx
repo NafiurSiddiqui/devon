@@ -13,7 +13,7 @@ export default function HomePage() {
 					alt="A macbook"
 					placeholder="blur"
 					width={'100%'}
-					priority
+					priority={true}
 				/>
 				<article className={` absolute top-1/4 px-4  sm:w-4/5  `}>
 					<h1 className={`pb-4 text-4xl text-slate-100 sm:text-6xl `}>

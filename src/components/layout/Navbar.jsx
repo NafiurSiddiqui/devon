@@ -1,9 +1,17 @@
 import Link from 'next/link';
-import React from 'react';
+import React, { useState } from 'react';
 import Button from '../Button';
 import MenuContainer from '../MenuContainer';
 
 export default function Navbar() {
+	const [MobileMenuToggle, setMobileMenuToggle] = useState(false);
+
+	const mobileMenuHandler = () => {
+		setMobileMenuToggle((prevState) => !prevState);
+	};
+
+	console.log(MobileMenuToggle);
+
 	return (
 		<nav className=" z-20 flex h-20 w-full items-center justify-between border border-slate-800 bg-slate-50 px-2 py-2 align-middle sm:top-0">
 			<div
@@ -30,6 +38,7 @@ export default function Navbar() {
 						className="ml-3 inline-flex items-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-300 md:hidden "
 						aria-controls="navbar-default"
 						aria-expanded="false"
+						onClick={() => mobileMenuHandler()}
 					>
 						<span className="sr-only">Open main menu</span>
 						<svg
@@ -46,6 +55,7 @@ export default function Navbar() {
 							></path>
 						</svg>
 						<svg
+							className={``}
 							xmlns="http://www.w3.org/2000/svg"
 							width="28"
 							height="28"
@@ -54,9 +64,9 @@ export default function Navbar() {
 							<path
 								fill="none"
 								stroke="currentColor"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								stroke-width="1.8"
+								strokeLinecap="round"
+								strokeLinejoin="round"
+								strokeWidth="1.8"
 								d="m11.25 4.75l-6.5 6.5m0-6.5l6.5 6.5"
 							/>
 						</svg>
