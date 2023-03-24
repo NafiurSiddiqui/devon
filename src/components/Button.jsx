@@ -20,7 +20,7 @@ export default function Button({ children, type, path }) {
 		'h-10 w-36 text-sm rounded border-2 border-gray-700 font-semibold text-slate-300 hover:border-0 hover:border-none hover:border-transparent hover:bg-slate-700 hover:text-white ';
 
 	const noFill =
-		'h-10 w-36 text-sm rounded border-2 border-slate-500 font-semibold text-slate-600 hover:border-0 hover:border-none hover:border-transparent hover:bg-slate-700 hover:text-white ';
+		'h-10  w-28 md:w-36 text-sm rounded border-2 border-slate-500 font-semibold text-slate-600 hover:border-0 hover:border-none hover:border-transparent hover:bg-slate-700 hover:text-white ';
 
 	return (
 		<button

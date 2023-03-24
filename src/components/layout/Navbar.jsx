@@ -10,10 +10,8 @@ export default function Navbar() {
 		setMobileMenuToggle((prevState) => !prevState);
 	};
 
-	console.log(MobileMenuToggle);
-
 	return (
-		<nav className=" z-20 flex h-20 w-full items-center justify-between border border-slate-800 bg-slate-50 px-2 py-2 align-middle sm:top-0">
+		<nav className=" z-30 flex h-20 w-full items-center justify-between border border-slate-800 bg-slate-50 px-2 py-2 align-middle sm:top-0">
 			<div
 				className={`container-full flex w-full flex-wrap items-center justify-between`}
 			>
@@ -23,9 +21,10 @@ export default function Navbar() {
 					</span>
 				</Link>
 
-				<div className="flex w-52  items-center justify-between md:w-80">
+				<div className="flex  items-center justify-between md:w-80">
 					<div
-						className="borderTest absolute top-[4.8rem] left-0 z-30 w-full  md:relative md:block md:w-auto"
+						className={` absolute  left-0 z-20 w-full  transition-all duration-500 ease-in-out md:relative
+						md:block md:w-auto ${MobileMenuToggle ? 'top-[4.8rem]' : '-top-full'}`}
 						id="navbar-default"
 					>
 						<MenuContainer itemType={'header'} />
@@ -42,7 +41,9 @@ export default function Navbar() {
 					>
 						<span className="sr-only">Open main menu</span>
 						<svg
-							className=" h-6 w-6"
+							className={`${
+								!MobileMenuToggle ? 'inline-block' : 'hidden'
+							} h-6 w-6`}
 							aria-hidden="true"
 							fill="currentColor"
 							viewBox="0 0 20 20"
@@ -55,7 +56,7 @@ export default function Navbar() {
 							></path>
 						</svg>
 						<svg
-							className={``}
+							className={`${MobileMenuToggle ? 'inline-block' : 'hidden'}`}
 							xmlns="http://www.w3.org/2000/svg"
 							width="28"
 							height="28"
