@@ -13,6 +13,7 @@ export default function HomePage() {
 					alt="A macbook"
 					placeholder="blur"
 					width={'100%'}
+					height={'100%'}
 					priority={true}
 				/>
 				<article
