@@ -8,7 +8,7 @@ export default function HomePage() {
 		<section className="relative z-10 ">
 			<div className="relative flex justify-center leading-6  ">
 				<Image
-					className="supportForSafari  h-96 brightness-50 contrast-75  "
+					className="supportForSafari  h-96 brightness-50 contrast-75 tablet-md:object-cover "
 					src={HeroImage}
 					alt="A macbook"
 					placeholder="blur"
