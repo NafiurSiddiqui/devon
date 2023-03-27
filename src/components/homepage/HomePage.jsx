@@ -7,9 +7,9 @@ export default function HomePage() {
 	return (
 		<>
 			<section className="borderTest relative z-10 h-screen overflow-hidden">
-				<div className="relative flex h-screen flex-col justify-center">
+				<div className="relative flex h-screen flex-col items-center">
 					<Image
-						className="supportForSafari  h-screen brightness-50 contrast-75 tablet-md:object-cover "
+						className="supportForSafari   h-screen brightness-50 contrast-75 tablet-md:object-cover "
 						src={HeroImage}
 						alt="A macbook"
 						placeholder="blur"
@@ -18,7 +18,7 @@ export default function HomePage() {
 						priority={true}
 					/>
 					<article
-						className={` absolute top-1/4 w-[90%] px-4 android-md:w-[22rem] tablet:left-8 tablet:w-[22rem] tablet-md:w-[22rem]  `}
+						className={` absolute top-1/4  px-6 android-md:w-[22rem] tablet:left-8 tablet:w-[22rem] tablet-md:w-[22rem]  `}
 					>
 						<h1 className={`sm:text-6xl pb-4 text-4xl text-slate-100 `}>
 							Dev up
@@ -44,15 +44,42 @@ export default function HomePage() {
 						</div>
 					</article>
 
-					<div className="absolute bottom-[7.438rem] -left-[2rem] h-[12rem] w-[100rem] rotate-[7deg] bg-slate-50  ">
-						<h2 className="relative -top-16 ml-8 -rotate-[7deg] text-2xl font-semibold  text-gray-600">
+					<div className="absolute -bottom-[6.438rem] -left-[2rem] h-[12rem] w-[100rem] rotate-[7deg] bg-slate-50  ">
+						<h2 className="relative -top-12 ml-8 -rotate-[7deg] text-2xl font-semibold  text-gray-700">
 							Should you signup?
 						</h2>
 					</div>
 				</div>
 			</section>
+			{/* SECOND SECTION */}
 			<section>
-				<h1>Second page</h1>
+				<article className="">
+					<p>
+						Signing up lets you track your progress, rewards, follow and
+						interacts with others in the community.
+					</p>
+
+					<div>
+						<hr />
+						<Button path={'/signup'} type={'fill'}>
+							Sign up
+						</Button>
+					</div>
+				</article>
+
+				<article className="">
+					<p>
+						Signing up lets you track your progress, rewards, follow and
+						interacts with others in the community.
+					</p>
+
+					<div>
+						<hr />
+						<Button path={'/guest'} type={'no-fill'}>
+							Guest
+						</Button>
+					</div>
+				</article>
 			</section>
 		</>
 	);
