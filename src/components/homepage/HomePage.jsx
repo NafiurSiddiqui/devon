@@ -52,15 +52,15 @@ export default function HomePage() {
 				</div>
 			</section>
 			{/* SECOND SECTION */}
-			<section>
-				<article className="">
-					<p>
+			<section className="borderTest h-screen py-4">
+				<article className="borderTest my-4 mx-2 pt-4">
+					<p className="mb-4 font-semibold text-gray-700">
 						Signing up lets you track your progress, rewards, follow and
 						interacts with others in the community.
 					</p>
 
-					<div>
-						<hr />
+					<div className="borderTest flex items-center justify-center">
+						<span className=" inline-block  h-1 w-full border-t-2 border-slate-400 "></span>
 						<Button path={'/signup'} type={'fill'}>
 							Sign up
 						</Button>
