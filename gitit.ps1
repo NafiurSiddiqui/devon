@@ -1,6 +1,5 @@
 function gitIt{
 
-#    param([string]$msg)
    git status
    git add -A
    git commit -m "$arg[0]"

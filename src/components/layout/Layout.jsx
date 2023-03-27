@@ -6,10 +6,10 @@ import SidebarMenu from '../sidebar/Sidebar';
 export default function Layout({ children, sidebarOpen }) {
 	return (
 		<>
-			<main className="min-h-screen">
+			<main>
 				<Navbar />
 				<SidebarMenu open={sidebarOpen} />
-				<main>{children}</main>
+				{children}
 				<Footer />
 			</main>
 		</>
