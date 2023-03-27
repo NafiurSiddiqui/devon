@@ -6,7 +6,7 @@ import Button from '../Button';
 export default function HomePage() {
 	return (
 		<>
-			<section className="borderTest relative z-10 h-screen overflow-hidden">
+			<section className=" relative z-10 h-screen overflow-hidden">
 				<div className="relative flex h-screen flex-col items-center">
 					<Image
 						className="supportForSafari   h-screen brightness-50 contrast-75 tablet-md:object-cover "
@@ -20,7 +20,9 @@ export default function HomePage() {
 					<article
 						className={` absolute top-1/4  px-6 android-md:w-[22rem] tablet:left-8 tablet:w-[22rem] tablet-md:w-[22rem]  `}
 					>
-						<h1 className={`sm:text-6xl pb-4 text-4xl text-slate-100 `}>
+						<h1
+							className={`sm:text-6xl pb-4 text-4xl font-bold text-slate-100`}
+						>
 							Dev up
 						</h1>
 						<p
@@ -52,35 +54,41 @@ export default function HomePage() {
 				</div>
 			</section>
 			{/* SECOND SECTION */}
-			<section className="borderTest h-screen py-4">
-				<article className="borderTest my-4 mx-2 pt-4">
-					<p className="mb-4 font-semibold text-gray-700 ">
-						Signing up lets you track your progress, rewards, follow and
-						interacts with others in the community.
-					</p>
+			<div className="h-[60vh] justify-center tablet-md:flex">
+				<section className="borderTest   py-4 px-2 leading-6 android-md/2:px-4  tablet-md:w-4/5 ">
+					<div className="borderTest ">
+						<article className="borderTest my-10 mx-2 pt-4 tablet:w-96">
+							<p className="mb-4 font-semibold text-gray-700 ">
+								Signing up lets you track your progress, rewards, follow and
+								interacts with others in the community.
+							</p>
 
-					<div className="borderTest flex items-center justify-between">
-						<span className=" inline-block  h-1 w-[55%] border-t-2 border-slate-400 pr-4"></span>
-						<Button path={'/signup'} type={'fill'}>
-							Sign up
-						</Button>
+							<div className=" flex items-center justify-between">
+								<span className=" inline-block  h-1 w-[55%] border-t-2 border-slate-400 pr-4"></span>
+								<Button path={'/signup'} type={'fill'}>
+									Sign up
+								</Button>
+							</div>
+						</article>
 					</div>
-				</article>
 
-				<article className="">
-					<p>
-						Signing up lets you track your progress, rewards, follow and
-						interacts with others in the community.
-					</p>
+					<div className="borderTest tablet:flex tablet:justify-end">
+						<article className="borderTest my-4 mx-2 pt-4 tablet:w-96">
+							<p className="mb-4 font-semibold text-gray-700 ">
+								Signing up lets you track your progress, rewards, follow and
+								interacts with others in the community.
+							</p>
 
-					<div>
-						<hr />
-						<Button path={'/guest'} type={'no-fill'}>
-							Guest
-						</Button>
+							<div className=" flex items-center justify-between">
+								<span className=" inline-block  h-1 w-[55%] border-t-2 border-slate-400 pr-4"></span>
+								<Button path={'/guest'} type={'no-fill'}>
+									Guest
+								</Button>
+							</div>
+						</article>
 					</div>
-				</article>
-			</section>
+				</section>
+			</div>
 		</>
 	);
 }

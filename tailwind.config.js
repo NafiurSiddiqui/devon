@@ -4,6 +4,7 @@ module.exports = {
 	theme: {
 		screens: {
 			'android-md': '400px',
+			'android-md/2': '450px',
 			tablet: '640px',
 			'tablet-md': '768px',
 			laptop: '1024px',
