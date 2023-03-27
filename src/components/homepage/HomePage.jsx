@@ -6,10 +6,10 @@ import Button from '../Button';
 export default function HomePage() {
 	return (
 		<>
-			<section className="borderTest relative z-10 h-screen">
+			<section className="borderTest relative z-10 h-screen overflow-hidden">
 				<div className="relative flex h-screen flex-col justify-center">
 					<Image
-						className="supportForSafari  h-screen brightness-50 contrast-75 tablet:h-full tablet-md:object-cover "
+						className="supportForSafari  h-screen brightness-50 contrast-75 tablet-md:object-cover "
 						src={HeroImage}
 						alt="A macbook"
 						placeholder="blur"
@@ -44,8 +44,10 @@ export default function HomePage() {
 						</div>
 					</article>
 
-					<div className="w-ful relative bottom-10 w-full bg-slate-300 pt-8 pb-14 ">
-						<h2>Why should you signup</h2>
+					<div className="absolute bottom-[7.438rem] -left-[2rem] h-[12rem] w-[100rem] rotate-[7deg] bg-slate-50  ">
+						<h2 className="relative -top-16 ml-8 -rotate-[7deg] text-2xl font-semibold  text-gray-600">
+							Should you signup?
+						</h2>
 					</div>
 				</div>
 			</section>
