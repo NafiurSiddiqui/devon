@@ -50,7 +50,7 @@ export default function HomePage() {
 					</article>
 
 					<div className="absolute -bottom-[11rem] -left-[2rem] h-[14rem] w-[150rem] rotate-[7deg] bg-slate-50   ">
-						<h2 className="laptop:-top-22 relative -top-20 ml-16 h-80 -rotate-[7deg] text-2xl font-semibold  text-stone-600 laptop:text-3xl desktop-md:ml-20">
+						<h2 className="laptop:-top-22 tablet-md:4xl relative -top-20 ml-16 h-80 -rotate-[7deg] text-2xl  font-semibold text-stone-600  laptop:text-4xl desktop-md:ml-20">
 							Should you signup?
 						</h2>
 					</div>
@@ -60,7 +60,7 @@ export default function HomePage() {
 			<div className=" mb-8 justify-center tablet:flex tablet-md:h-[60vh]">
 				<section className="  py-4 px-2 leading-6 android-md/2:px-4  tablet:w-4/5 desktop:w-3/5 ">
 					<div className=" ">
-						<article className="my-10 mx-2 rounded border border-stone-300 p-6   tablet-md:w-4/5 laptop:w-[50rem]">
+						<article className="my-10 mx-2 rounded border border-stone-300 p-6   tablet-md:w-4/5 tablet-md:px-6 laptop:w-[50rem] laptop:px-8">
 							<p className="mb-4 font-semibold text-stone-700 tablet:text-xl tablet-md:w-4/5  desktop-md:text-3xl">
 								Signing up lets you track your progress, rewards, follow and
 								interacts with others in the community.
@@ -76,7 +76,7 @@ export default function HomePage() {
 					</div>
 
 					<div className=" tablet:flex tablet:justify-end">
-						<article className="my-10 mx-2 rounded border border-stone-300 p-6   tablet-md:w-4/5 laptop:w-[50rem]">
+						<article className="my-10 mx-2 rounded border border-stone-300 p-6   tablet-md:w-4/5 tablet-md:px-6 laptop:w-[50rem] laptop:px-8">
 							<p className="mb-4 font-semibold text-stone-700 tablet:text-xl tablet-md:w-4/5  desktop-md:text-3xl">
 								Or you can start learning right away without saving your
 								progress.
