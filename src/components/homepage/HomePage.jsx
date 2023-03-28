@@ -18,20 +18,20 @@ export default function HomePage() {
 						priority={true}
 					/>
 					<article
-						className={` absolute top-1/4  px-6 android-md:w-[22rem] tablet:left-8 tablet:w-[30rem] tablet-md:w-[36rem] desktop:w-[44rem] desktop-md:left-32  `}
+						className={` absolute top-1/4  px-6  android-md/2:w-[28rem] tablet:left-8 tablet:w-[30rem] tablet-md:w-[36rem] desktop:w-[44rem] desktop-md:left-32  `}
 					>
 						<h1
-							className={`pb-4 text-6xl font-bold text-slate-100 tablet-md:text-8xl desktop:text-9xl`}
+							className={`pb-4 text-5xl font-bold text-slate-100  desktop:text-9xl`}
 						>
 							Dev up
 						</h1>
 						<p
 							className="text-bold
-					 my-7
-					text-lg
+					 my-1
+					text-base
 					text-white
 					tablet:pr-4
-					tablet:text-2xl
+					tablet:text-lg
 					desktop:text-4xl
 					"
 						>
@@ -39,7 +39,7 @@ export default function HomePage() {
 							industry that always pays.
 						</p>
 
-						<div className=" mt-16 flex justify-between tablet:w-[22rem] tablet-md:w-[32rem] ">
+						<div className=" mt-16 flex justify-between tablet:w-[26rem]  ">
 							<Button path={'/signup'} type={'fill'}>
 								Sign up
 							</Button>
@@ -49,8 +49,8 @@ export default function HomePage() {
 						</div>
 					</article>
 
-					<div className="absolute -bottom-[11rem] -left-[2rem] h-[14rem] w-[150rem] rotate-[7deg] bg-slate-50   ">
-						<h2 className="laptop:-top-22 tablet-md:4xl relative -top-20 ml-16 h-80 -rotate-[7deg] text-2xl  font-semibold text-stone-600  laptop:text-4xl desktop-md:ml-20">
+					<div className="absolute -bottom-[9rem] -left-[2rem] h-[14rem] w-[150rem] rotate-[7deg] bg-slate-50   ">
+						<h2 className="laptop:-top-22 tablet-md:4xl relative -top-24 ml-16 h-80 -rotate-[7deg] text-xl  font-semibold text-stone-600  laptop:text-4xl desktop-md:ml-20">
 							Should you signup?
 						</h2>
 					</div>
@@ -68,7 +68,7 @@ export default function HomePage() {
 
 							<div className=" flex items-center justify-between">
 								<span className=" inline-block  h-1 w-[55%] border-t-2 border-slate-400 pr-4 tablet-md:w-2/5"></span>
-								<Button path={'/signup'} type={'fill'}>
+								<Button path={'/signup'} type={'fill'} singleBtn={true}>
 									Sign up
 								</Button>
 							</div>
@@ -84,7 +84,7 @@ export default function HomePage() {
 
 							<div className=" flex items-center justify-between">
 								<span className=" inline-block  h-1 w-[55%] border-t-2 border-slate-400 pr-4 tablet-md:w-3/5"></span>
-								<Button path={'/guest'} type={'no-fill'}>
+								<Button path={'/guest'} type={'no-fill'} singleBtn={true}>
 									Guest
 								</Button>
 							</div>
