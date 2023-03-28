@@ -11,7 +11,7 @@ export default function Navbar() {
 	};
 
 	return (
-		<nav className=" z-30 flex h-20 w-full items-center justify-between border border-slate-800 bg-slate-50 px-2 py-2 align-middle sm:top-0">
+		<nav className=" sm:top-0 z-30 flex h-20 w-full items-center justify-between border border-slate-800 bg-slate-50 px-2 py-2 align-middle">
 			<div
 				className={`container-full flex w-full flex-wrap items-center justify-between`}
 			>
@@ -21,10 +21,12 @@ export default function Navbar() {
 					</span>
 				</Link>
 
-				<div className="flex  items-center justify-between md:w-80">
+				<div className="flex  items-center justify-between tablet-md:w-80">
 					<div
-						className={` absolute  left-0 z-20 w-full  transition-all duration-500 ease-in-out md:relative
-						md:block md:w-auto ${MobileMenuToggle ? 'top-[4.8rem]' : '-top-full'}`}
+						className={`tablet-md:blocktablet-md:w-auto absolute left-0  z-20 w-full transition-all duration-500
+						ease-in-out tablet-md:relative ${
+							MobileMenuToggle ? 'top-[4.8rem]' : '-top-full'
+						} tablet-md:top-2`}
 						id="navbar-default"
 					>
 						<MenuContainer itemType={'header'} />
@@ -34,7 +36,7 @@ export default function Navbar() {
 					</Button>
 					<button
 						type="button"
-						className="ml-3 inline-flex items-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-300 md:hidden "
+						className="md:hidden ml-3 inline-flex items-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-300 "
 						aria-controls="navbar-default"
 						aria-expanded="false"
 						onClick={() => mobileMenuHandler()}
@@ -43,7 +45,7 @@ export default function Navbar() {
 						<svg
 							className={`${
 								!MobileMenuToggle ? 'inline-block' : 'hidden'
-							} h-6 w-6`}
+							} h-6 w-6 tablet-md:hidden`}
 							aria-hidden="true"
 							fill="currentColor"
 							viewBox="0 0 20 20"

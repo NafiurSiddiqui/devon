@@ -14,31 +14,34 @@ const footerItems = [
 export default function MenuContainer({ itemType }) {
 	return (
 		<ul
-			className={`relative mb-2 flex  bg-gray-50 md:mt-0 md:h-fit  md:flex-row md:justify-between md:border-0  md:text-sm md:font-medium ${
-				itemType === 'footer' ? 'flex-row' : 'h-[30rem] flex-col  p-4'
-			}`}
+			className={`relative mb-2 flex  bg-gray-50 tablet-md:mt-0 tablet-md:h-fit  tablet-md:flex-row tablet-md:justify-between tablet-md:border-0  tablet-md:p-0 tablet-md:text-sm
+			tablet-md:font-medium
+			${itemType === 'footer' ? 'flex-row' : 'h-[30rem] flex-col  p-4 '}`}
 		>
 			{itemType === 'header'
 				? headerItems.map(([title, path]) => (
-						<li key={title} className="mx-2first:ml-0 m">
+						<li key={title} className="m mx-2 first:ml-0">
 							<Link
 								href={path}
 								className="
-								md:p-00
 								hover:navHover
 								active:before:H-2
 								my-1
-								inline-block w-full rounded-sm border-2
-								border-gray-400
+								inline-block
+								w-full rounded-sm border-2 border-stone-700
 								p-4
 								text-xl
 								font-semibold
-								text-slate-800
-								opacity-90
-								  before:absolute
-						 before:top-[3.2rem] before:h-2 before:rounded-sm before:bg-secondary md:bg-transparent 
-						md:pl-3
-						 md:pr-4 md:hover:before:w-4"
+								text-stone-500
+								
+								before:absolute
+								before:top-[2rem]
+								  before:h-2
+						 before:rounded-sm before:bg-secondary tablet-md:border-0 tablet-md:bg-transparent tablet-md:p-0 
+						tablet-md:pl-3
+						 tablet-md:pr-4
+						 tablet-md:text-lg 
+						 tablet-md:hover:before:w-4"
 								aria-current="page"
 							>
 								{title}
@@ -46,16 +49,18 @@ export default function MenuContainer({ itemType }) {
 						</li>
 				  ))
 				: footerItems.map(([title, path]) => (
-						<li key={title}>
+						<li key={title} className="m mx-1 first:ml-0">
 							<Link
 								href={path}
-								className="md:p-00 hover:navHover  
-								navText 
+								className="
+								hover:navHover 
+								navText inline-block  
+								pl-3 
 							
-								inline-block
-						 pl-3 pr-4 text-2xl
-						 text-slate-800
-						 md:bg-transparent"
+								pr-4
+						 text-2xl text-slate-800 tablet-md:bg-transparent
+						 
+						 "
 								aria-current="page"
 							>
 								{title}

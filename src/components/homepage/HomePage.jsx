@@ -18,7 +18,7 @@ export default function HomePage() {
 						priority={true}
 					/>
 					<article
-						className={`borderTest  absolute top-[20%]  px-6  android-md/2:w-[28rem] tablet:left-8 tablet:w-[30rem] tablet-md:w-[36rem] desktop:w-[44rem] desktop-md:left-32  `}
+						className={`  absolute top-[20%]  px-6  android-md/2:w-[28rem] tablet:left-8 tablet:w-[30rem] tablet-md:w-[36rem] desktop:w-[44rem] desktop-md:left-32  `}
 					>
 						<h1
 							className={`pb-4 text-5xl font-bold text-slate-100  desktop:text-5xl`}
