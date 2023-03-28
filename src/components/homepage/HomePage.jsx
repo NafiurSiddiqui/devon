@@ -54,17 +54,17 @@ export default function HomePage() {
 				</div>
 			</section>
 			{/* SECOND SECTION */}
-			<div className="h-[60vh] justify-center tablet-md:flex">
-				<section className="borderTest   py-4 px-2 leading-6 android-md/2:px-4  tablet-md:w-4/5 ">
+			<div className="h-[60vh] justify-center tablet:flex">
+				<section className="borderTest   py-4 px-2 leading-6 android-md/2:px-4  tablet:w-4/5 desktop:w-3/5 ">
 					<div className="borderTest ">
-						<article className="borderTest my-10 mx-2 pt-4 tablet:w-96 tablet-md:w-4/5">
-							<p className="mb-4 font-semibold text-stone-700 tablet-md:w-4/5 tablet-md:text-xl">
+						<article className="borderTest my-10 mx-2 pt-4 tablet:w-96 tablet-md:w-4/5 laptop:w-[40rem]">
+							<p className="mb-4 font-semibold text-stone-700 tablet:text-xl tablet-md:w-4/5 desktop-md:text-2xl">
 								Signing up lets you track your progress, rewards, follow and
 								interacts with others in the community.
 							</p>
 
 							<div className=" flex items-center justify-between">
-								<span className=" inline-block  h-1 w-[55%] border-t-2 border-slate-400 pr-4 tablet-md:w-[73%]"></span>
+								<span className=" inline-block  h-1 w-[55%] border-t-2 border-slate-400 pr-4 tablet-md:w-3/5"></span>
 								<Button path={'/signup'} type={'fill'}>
 									Sign up
 								</Button>
@@ -73,14 +73,14 @@ export default function HomePage() {
 					</div>
 
 					<div className="borderTest tablet:flex tablet:justify-end">
-						<article className="borderTest my-10 mx-2 pt-4 tablet:w-96 tablet-md:w-4/5">
-							<p className="mb-4 font-semibold text-stone-700 tablet-md:w-4/5 tablet-md:text-xl">
+						<article className="borderTest my-10 mx-2 pt-4 tablet:w-96 tablet-md:w-4/5 laptop:w-[40rem]">
+							<p className="mb-4 font-semibold text-stone-700 tablet:text-xl tablet-md:w-4/5 tablet-md:text-2xl">
 								Or you can start learning right away without saving your
 								progress.
 							</p>
 
 							<div className=" flex items-center justify-between">
-								<span className=" inline-block  h-1 w-[55%] border-t-2 border-slate-400 pr-4 tablet-md:w-[73%]"></span>
+								<span className=" inline-block  h-1 w-[55%] border-t-2 border-slate-400 pr-4 tablet-md:w-3/5"></span>
 								<Button path={'/guest'} type={'no-fill'}>
 									Guest
 								</Button>
