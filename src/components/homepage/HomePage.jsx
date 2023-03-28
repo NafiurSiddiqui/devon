@@ -75,8 +75,8 @@ export default function HomePage() {
 					<div className="borderTest tablet:flex tablet:justify-end">
 						<article className="borderTest my-10 mx-2 pt-4 tablet:w-96 tablet-md:w-4/5">
 							<p className="mb-4 font-semibold text-stone-700 tablet-md:w-4/5 tablet-md:text-xl">
-								Signing up lets you track your progress, rewards, follow and
-								interacts with others in the community.
+								Or you can start learning right away without saving your
+								progress.
 							</p>
 
 							<div className=" flex items-center justify-between">
